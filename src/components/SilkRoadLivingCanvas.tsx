@@ -188,8 +188,9 @@ export function SilkRoadLivingCanvas() {
     let imgW = 1920;
     let imgH = 1080;
 
+    const baseUrl = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
     const img = new Image();
-    img.src = "/silk-road-bg.jpg";
+    img.src = `${baseUrl}silk-road-bg.jpg`;
     img.onload = () => {
       gl.bindTexture(gl.TEXTURE_2D, texture);
       gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, img);

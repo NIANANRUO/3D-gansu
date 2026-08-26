@@ -12,6 +12,10 @@ export interface PhotoData {
   seal: string;
 }
 
+const BASE_URL = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : import.meta.env.BASE_URL + "/";
+
 export const GANSU_PHOTOS: PhotoData[] = [
   {
     id: "gansu-01",
@@ -23,7 +27,7 @@ export const GANSU_PHOTOS: PhotoData[] = [
     dynasty: "白垩纪地层 · 亿年沉积",
     poem: "斑斓流转如虹练，千里丹霞落九天",
     description: "数亿年风雨雕琢的地质奇观，层理交错、岩壁陡峭，在夕阳下如打翻的天然调色盘。",
-    image: "/images/page-01.png",
+    image: `${BASE_URL}images/page-01.png`,
     seal: "丹霞",
   },
   {
@@ -36,7 +40,7 @@ export const GANSU_PHOTOS: PhotoData[] = [
     dynasty: "汉唐古丝路要冲",
     poem: "一湾如月落金沙，风吹不起古鸣泉",
     description: "狂风卷沙而不掩清泉，月牙清流历经千年不涸，大漠奇绝，静卧金丘。",
-    image: "/images/page-02.png",
+    image: `${BASE_URL}images/page-02.png`,
     seal: "月泉",
   },
   {
@@ -49,7 +53,7 @@ export const GANSU_PHOTOS: PhotoData[] = [
     dynasty: "明洪武五年（1372年）始建",
     poem: "严关百尺界天西，万里征人白日迷",
     description: "明代长城西端第一隘口，锁钥河西走廊咽喉，关楼巍峨，祁连皑皑为屏。",
-    image: "/images/page-03.png",
+    image: `${BASE_URL}images/page-03.png`,
     seal: "雄关",
   },
   {
@@ -62,7 +66,7 @@ export const GANSU_PHOTOS: PhotoData[] = [
     dynasty: "后秦（384-417年）始凿",
     poem: "麦垛耸翠凌云汉，悬崖千佛度苍生",
     description: "孤峰突兀，凌空飞栈，千百尊北朝至隋唐泥塑佛像神态悲悯，巧夺天工。",
-    image: "/images/page-04.png",
+    image: `${BASE_URL}images/page-04.png`,
     seal: "麦积",
   },
   {
@@ -75,7 +79,7 @@ export const GANSU_PHOTOS: PhotoData[] = [
     dynasty: "安多藏区千年古寨",
     poem: "峻岭如削开石殿，晨烟万缕绕人家",
     description: "天然巨型石城环抱中的古老村落，晨雾缭绕于万仞岩壁之间，宁静悠远如伊甸园。",
-    image: "/images/page-05.png",
+    image: `${BASE_URL}images/page-05.png`,
     seal: "扎尕",
   },
   {
@@ -88,7 +92,7 @@ export const GANSU_PHOTOS: PhotoData[] = [
     dynasty: "清康熙四十八年（1709年）",
     poem: "梵刹金顶耀云端，绿海无垠放长歌",
     description: "藏传佛教格鲁派六大寺院之一，金顶白墙在莽莽桑科高山草甸之间熠熠生辉。",
-    image: "/images/page-06.png",
+    image: `${BASE_URL}images/page-06.png`,
     seal: "拉卜",
   },
   {
@@ -101,7 +105,7 @@ export const GANSU_PHOTOS: PhotoData[] = [
     dynasty: "新生代第四纪早更新世",
     poem: "大河九曲开绝壁，怪石千寻立晚风",
     description: "黄河之畔峰林耸立、绝壁干仞，峡谷幽深蜿蜒，展现出西部极其苍凉壮美的史诗风骨。",
-    image: "/images/page-07.png",
+    image: `${BASE_URL}images/page-07.png`,
     seal: "石林",
   },
   {
@@ -114,7 +118,7 @@ export const GANSU_PHOTOS: PhotoData[] = [
     dynasty: "古匈奴语“天山”",
     poem: "雪岭横空连塞外，绿茵如毯卧牛羊",
     description: "河西走廊的生命母亲山，终年皑皑冰川融水滋润千里绿洲，高山草甸繁花似锦。",
-    image: "/images/page-08.png",
+    image: `${BASE_URL}images/page-08.png`,
     seal: "祁连",
   },
   {
@@ -127,7 +131,7 @@ export const GANSU_PHOTOS: PhotoData[] = [
     dynasty: "远古湖相沉积地貌",
     poem: "落日残照沙海寂，风过荒城万古音",
     description: "千百座风蚀土丘如舰队横泊于大漠落日之中，入夜狂风怒号，雄浑苍莽无与伦比。",
-    image: "/images/page-09.png",
+    image: `${BASE_URL}images/page-09.png`,
     seal: "雅丹",
   },
   {
@@ -140,7 +144,7 @@ export const GANSU_PHOTOS: PhotoData[] = [
     dynasty: "前秦建元二年（366年）始建",
     poem: "千载飞天花散尽，一龛壁画度春秋",
     description: "七百余窟、万卷经书、四万余平米壁画，丝路文明最璀璨的中西交融丰碑。",
-    image: "/images/page-10.png",
+    image: `${BASE_URL}images/page-10.png`,
     seal: "莫高",
   },
   {
@@ -153,7 +157,7 @@ export const GANSU_PHOTOS: PhotoData[] = [
     dynasty: "三点五公里千年信仰",
     poem: "转经筒转千重愿，风吹经幡万里安",
     description: "两千余个转经筒环绕古寺，信徒以脚步丈量虔诚，经轮在晨光中流转出悠长回响。",
-    image: "/images/page-11.png",
+    image: `${BASE_URL}images/page-11.png`,
     seal: "经轮",
   },
   {
@@ -166,7 +170,7 @@ export const GANSU_PHOTOS: PhotoData[] = [
     dynasty: "清光绪三十三年（1907年）",
     poem: "百载铁骨跨狂澜，夜泊金城听涛声",
     description: "黄河上游第一座近代铁桥，历经百年奔涌洪流依然横跨两岸，夜幕下华灯璀璨。",
-    image: "/images/page-12.png",
+    image: `${BASE_URL}images/page-12.png`,
     seal: "金城",
   },
   {
@@ -179,7 +183,7 @@ export const GANSU_PHOTOS: PhotoData[] = [
     dynasty: "古丝绸之路支道",
     poem: "羊皮筏子漂黄浪，驴车缓步入苍茫",
     description: "两旁直插云天的沙砾石笋，昔日金戈铁马的古战场，如今唯余长风浩荡。",
-    image: "/images/page-13.png",
+    image: `${BASE_URL}images/page-13.png`,
     seal: "饮马",
   },
   {
@@ -192,7 +196,7 @@ export const GANSU_PHOTOS: PhotoData[] = [
     dynasty: "古羌族与氐族繁衍地",
     poem: "碧水深潭照翠微，绝壁飞瀑落瑶池",
     description: "青山叠翠、碧水幽蓝，十三处高山湖泊与九道险峻峡谷相映成趣，如诗如画。",
-    image: "/images/page-14.png",
+    image: `${BASE_URL}images/page-14.png`,
     seal: "官鹅",
   },
   {
@@ -205,7 +209,7 @@ export const GANSU_PHOTOS: PhotoData[] = [
     dynasty: "传统榻板木屋聚落",
     poem: "石壁为城云作被，山田层叠麦初黄",
     description: "传统藏式木屋错落于山坡梯田之上，牛羊散落其间，展现天人合一的高原农牧图景。",
-    image: "/images/page-15.png",
+    image: `${BASE_URL}images/page-15.png`,
     seal: "藏寨",
   },
   {
@@ -218,7 +222,7 @@ export const GANSU_PHOTOS: PhotoData[] = [
     dynasty: "西汉霍去病（前121年）始创",
     poem: "祁连山下风卷草，万骑奔腾踏塞云",
     description: "历经汉、唐、明、清两千一百余年，祁连雪峰之下，万马奔腾，气吞万里如虎。",
-    image: "/images/page-16.png",
+    image: `${BASE_URL}images/page-16.png`,
     seal: "山丹",
   },
   {
@@ -231,7 +235,7 @@ export const GANSU_PHOTOS: PhotoData[] = [
     dynasty: "西秦建弘元年（420年）",
     poem: "万笏朝天石作林，唐佛临渊照大川",
     description: "大寺沟峡谷内悬崖绝壁上的石窟群，唐代弥勒大佛依山而凿，肃穆凝视滔滔黄河。",
-    image: "/images/page-17.png",
+    image: `${BASE_URL}images/page-17.png`,
     seal: "炳灵",
   },
   {
@@ -244,7 +248,7 @@ export const GANSU_PHOTOS: PhotoData[] = [
     dynasty: "黄帝问道广成子故地",
     poem: "崆峒云海连天际，古刹钟声出翠微",
     description: "峰峦叠嶂、古木参天，集奇险灵秀于一身，云海翻涌之间宛若蓬莱仙境。",
-    image: "/images/page-18.png",
+    image: `${BASE_URL}images/page-18.png`,
     seal: "崆峒",
   },
 ];
